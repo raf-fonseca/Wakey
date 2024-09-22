@@ -44,8 +44,8 @@ const AlarmsPage = ({alarms, setAlarms, setAlarmActive, activePage}) => {
                 <div
                     className="
                         flex-[0.5] flex justify-center items-center h-full
-                        bg-white text-lg 
-                        rounded-lg border border-white border-solid
+                        bg-white bg-opacity-10 text-lg text-white text-opacity-70
+                        rounded-lg border border-white border-opacity-10 border-solid
                     "
                     onClick={() => setOpen(true)}
                 >
@@ -55,8 +55,8 @@ const AlarmsPage = ({alarms, setAlarms, setAlarmActive, activePage}) => {
                 <div
                     className="
                         flex-[0.5] flex justify-center items-center h-full
-                        bg-white text-lg 
-                        rounded-lg border border-white border-solid
+                        bg-white bg-opacity-10 text-lg text-white text-opacity-70
+                        rounded-lg border border-white border-opacity-10 border-solid
                     "
                     onClick={() => setAlarmActive(prev => {return {...prev, bool: true}})}
                 >

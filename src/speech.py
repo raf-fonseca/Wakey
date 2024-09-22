@@ -4,7 +4,7 @@ import sys
 
 def smthing(text):
   client = ElevenLabs(
-    api_key="sk_da63b4614fe7425f373317605143cf76b63596a8d9cc8f22", # Defaults to ELEVEN_API_KEY
+    api_key = process.env.ELEVENLABS_API_KEY,
   )
 
   audio_stream = client.generate(

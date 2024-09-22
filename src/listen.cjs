@@ -76,7 +76,7 @@ export async function listenWrapper() {
   return "EMPTY"
 }
 
-// if (require.main === module) {
-//   console.log("Entry Point (Printed first)");
-//   listenWrapper();
-// }
+if (require.main === module) {
+  console.log("Entry Point (Printed first)");
+  listenWrapper();
+}

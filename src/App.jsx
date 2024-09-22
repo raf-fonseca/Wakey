@@ -8,7 +8,7 @@ import SettingsPage from "./pages/SettingsPage.jsx";
 import { ALARM_ARRAY } from "./alarm.js";
 
 function App() {
-  const [ alarms, setAlarms ] = useState(ALARM_ARRAY);
+  const [alarms, setAlarms ] = useState(ALARM_ARRAY);
   const [activePage, setActivePage] = useState('Alarm');
   const [alarmActive, setAlarmActive] = useState({bool: false, alarm: undefined});
 
@@ -40,11 +40,11 @@ function App() {
 
   return (
     <main
-      className="max-h-full relative h-dvh flex flex-col justify-start items-center p-4 gap-4 bg-[#101010] overflow-hidden"
+      className="max-h-full relative h-dvh flex flex-col justify-start items-center gap-4 bg-[#1f1f1f] overflow-hidden xl:px-80 xl:pb-10 xl:pt-5 lg:px-60 md:px-40 md:pb-5 sm:px-10 pb-3 px-4 "
     >
       {alarmActive.bool && <AlarmPage alarmActive={alarmActive} setAlarmActive={setAlarmActive} />}
       <div
-        className="h-full flex-[0.1] w-full min-h-max" 
+        className="h-full flex-[0.1] w-full min-h-max mt-2" 
       >
         <Navbar activePage={activePage} setActivePage={setActivePage}/>
       </div>

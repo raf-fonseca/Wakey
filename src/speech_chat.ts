@@ -1,7 +1,7 @@
 import { StreamedChatResponse } from "cohere-ai/api";
 import { Stream } from "cohere-ai/core";
 import generateResponse, { ChatMessage } from "./genai";
-import { listenWrapper } from "./listen";
+import { listenWrapper } from "./listen.cjs";
 import generateResponseWithSchedule from "./genai_with_schedule";
 import axios from "axios";
 

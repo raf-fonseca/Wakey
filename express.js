@@ -1,7 +1,7 @@
 import express from "express"
 import cors from 'cors'
 import {exec, spawn} from 'child_process'
-import { listenWrapper } from "./src/listen.js";
+import { listenWrapper } from "./src/listen.cjs/index.js";
 //import { listenWrapper } from "./src/hi.js"; ///Users/alejandro/VSCodeProjects/Wakey/src/listen.ts
 import { promises as fs } from 'fs';
 import { ElevenLabsClient, play } from "elevenlabs";
